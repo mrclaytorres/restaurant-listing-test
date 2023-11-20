@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState([]);
 
   const fetchInfo = () => { 
-    return axios.get('./restaurants.json') 
+    return axios.get('https://nextjs-orpin-omega-98.vercel.app/api/restaurants') 
               .then((response) => setData(response.data));
   }
   
